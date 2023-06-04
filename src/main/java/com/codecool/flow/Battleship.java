@@ -3,7 +3,6 @@ package com.codecool.flow;
 import com.codecool.console.Display;
 import com.codecool.console.Input;
 import com.codecool.players.AiDifficulty;
-
 import java.util.ArrayList;
 import java.util.List;
 

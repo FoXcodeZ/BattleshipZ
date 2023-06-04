@@ -10,7 +10,7 @@ public enum SquareStatus {
     HIT(BackgroundColor.BRIGHT_RED + TextColor.BRIGHT_BLACK + " X " + TextStyle.RESET),
     MISSED(BackgroundColor.BRIGHT_GREEN + TextColor.BRIGHT_BLACK + " O " + TextStyle.RESET),
     SUNK(BackgroundColor.RED + TextColor.BRIGHT_BLACK + " % " + TextStyle.RESET),
-    SUNK_AREA(BackgroundColor.BRIGHT_BLUE + " ≈ " + TextStyle.RESET);
+    SUNK_AREA(BackgroundColor.BLUE + TextColor.BLACK + " ≈ " + TextStyle.RESET);
 
     private final String sign;
 
