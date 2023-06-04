@@ -43,7 +43,7 @@ public class Battleship {
             int option = input.selectMenu(mainMenuOptions.size());
             switch (option) {
                 case 1 -> {
-                    // Start New Game
+                    // Start Game
                     boolean inGameMenu = true;
                     while (inGameMenu) {
                         display.clearConsole();
@@ -52,7 +52,7 @@ public class Battleship {
                         option = input.selectMenu(gameModeOptions.size());
                         switch (option) {
                             case 1 -> {
-                                // PVE
+                                // Player vs Computer
                                 display.clearConsole();
                                 display.showLogo();
                                 display.showMenu(gameDifficultyOptions);

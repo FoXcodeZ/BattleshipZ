@@ -3,7 +3,7 @@ import com.codecool.ships.ShipDirection;
 import com.codecool.ships.ShipType;
 
 public class Board {
-    private Square[][] ocean;
+    private final Square[][] ocean;
     public Board() {
         ocean = new Square[10][10];
 
@@ -22,24 +22,25 @@ public class Board {
     public boolean isPlacementOk(int x, int y, ShipDirection direction, ShipType shipType) {
         for (int i = 0; i < shipType.getLength(); i++) {
             switch (direction) {
-                case UP:
+                case UP -> {
                     if (isOutOfRange(x, y - i) || isNotEmpty(x, y - i) || !isNotTouching(x, y - i))
                         return false;
-                    break;
-                case DOWN:
+                }
+                case DOWN -> {
                     if (isOutOfRange(x, y + i) || isNotEmpty(x, y + i) || !isNotTouching(x, y + i))
                         return false;
-                    break;
-                case LEFT:
+                }
+                case LEFT -> {
                     if (isOutOfRange(x - i, y) || isNotEmpty(x - i, y) || !isNotTouching(x - i, y))
                         return false;
-                    break;
-                case RIGHT:
+                }
+                case RIGHT -> {
                     if (isOutOfRange(x + i, y) || isNotEmpty(x + i, y) || !isNotTouching(x + i, y))
                         return false;
-                    break;
-                default:
+                }
+                default -> {
                     return false;
+                }
             }
         }
         return true;

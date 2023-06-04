@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ship {
-    private List<Square> shipLocation = new ArrayList<>();
-    private ShipType shipType;
+    private final List<Square> shipLocation = new ArrayList<>();
+    private final ShipType shipType;
     public Ship(ShipType shipType) {
         this.shipType = shipType;
         for (int i = 0; i < shipType.getLength(); i++) {
@@ -30,22 +30,22 @@ public class Ship {
         this.shipType = shipType;
         for (int i = 0; i < shipType.getLength(); i++) {
             switch (direction) {
-                case UP:
+                case UP -> {
                     shipLocation.add(board.getOcean()[y - i][x]);
                     board.getOcean()[y - i][x].setSquareStatus(SquareStatus.SHIP);
-                    break;
-                case DOWN:
+                }
+                case DOWN -> {
                     shipLocation.add(board.getOcean()[y + i][x]);
                     board.getOcean()[y + i][x].setSquareStatus(SquareStatus.SHIP);
-                    break;
-                case LEFT:
+                }
+                case LEFT -> {
                     shipLocation.add(board.getOcean()[y][x - i]);
                     board.getOcean()[y][x - i].setSquareStatus(SquareStatus.SHIP);
-                    break;
-                case RIGHT:
+                }
+                case RIGHT -> {
                     shipLocation.add(board.getOcean()[y][x + i]);
                     board.getOcean()[y][x + i].setSquareStatus(SquareStatus.SHIP);
-                    break;
+                }
             }
         }
     }
