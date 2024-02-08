@@ -1,4 +1,5 @@
 # Battleship Z
+## Console Game in Java
 
 ## How to run this game?
 ### Option 1:
