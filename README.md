@@ -3,12 +3,12 @@
 Battleship Z is my terminal-based implementation of the popular Battleship game.
 
 
-## Used technologies:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-
-
 ## Screenshots:
 ![Zrzut ekranu (69)](https://github.com/FoXcodeZ/BattleshipZ/assets/109001258/35d51706-4225-4983-b662-09efce55fde1)
+
+
+## Used technologies:
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
 
 ## How to run this game?
