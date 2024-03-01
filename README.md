@@ -12,7 +12,6 @@ Battleship Z is my terminal-based implementation of the popular Battleship game.
 
 
 ## How to run this game?
-
 ### Option 1:
 Simply open this project in your IDE (IntelliJ IDEA) and run it.
 
@@ -20,7 +19,6 @@ Simply open this project in your IDE (IntelliJ IDEA) and run it.
 Go to the folder: ``BattleshipZ/out/artifacts/`` and run a terminal.
 
 In a terminal (that supports ASCII codes), execute: `java -jar BattleshipZ.jar`.
-
 
 ==IMPORTANT==
 ``Your terminal must support ASCII codes as this game utilizes them for coloured text.``
